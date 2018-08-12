@@ -4,6 +4,8 @@ namespace CG_5_3_Dice_Game
 {
     class Program
     {
+
+
         static void Main(string[] args)
         {
             Console.WriteLine("Let's play a game.");
@@ -14,28 +16,11 @@ namespace CG_5_3_Dice_Game
 
         }
 
-
-        private static int User()
+        private static int UserGame()
         {
-            Random randomUser = new Random();
-            int user = randomUser.Next(1, 6);
-            Random randomUser2 = new Random();
-            int user2 = randomUser2.Next(1, 6);
+            int[] UserRolls = new int[10];
 
-            return user + user2;
 
         }
-
-
-        private static int Comp()
-        {
-            Random randomComp = new Random();
-            int comp = randomComp.Next(1, 6);
-            Random randomComp2 = new Random();
-            int comp2 = randomComp2.Next(1, 6);
-
-            return comp + comp2;
-        }
-
     }
 }
